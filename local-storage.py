@@ -1,6 +1,7 @@
 
 import os
 
+os.system("pip cache purge")
 os.system("pip install -U scratchattach")
 
 import scratchattach as scratch3
