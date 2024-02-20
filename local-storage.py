@@ -5,7 +5,10 @@ os.system("pip cache purge")
 os.system("pip install -U scratchattach")
 
 import scratchattach as scratch3
+from app import keep_alive
 import json
+
+keep_alive()
 
 
 session = scratch3.Session(
