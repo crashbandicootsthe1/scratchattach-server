@@ -1,6 +1,11 @@
+
+import os
+
+os.system("pip install -U scratchattach")
+
 import scratchattach as scratch3
 import json
-import os
+
 
 session = scratch3.Session(
     os.environ["SESSION_ID"], username="crashbandicootsthe1")
