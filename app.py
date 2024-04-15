@@ -40,6 +40,3 @@ if __name__ == "__main__":
     #  -b 127.0.0.1:8808: Bind to localhost on port 8808
     #  --access-logfile - --error-logfile -: Log to stdout/stderr
     subprocess.Popen(["gunicorn", "local-storage:app", "-w", "4", "-b", "127.0.0.1:8808", "--access-logfile", "-", "--error-logfile", "-"])
-
-    # Start the Flask app in a separate thread
-    keep_alive()
